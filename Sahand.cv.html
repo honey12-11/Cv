@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sahand Najmaldeen - CV</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --black: #0A0A0A;
+    --white: #FAFAF7;
+    --accent: #C8F135;
+    --mid: #1E1E1E;
+    --gray: #6B6B6B;
+  }
+  body { background: var(--white); font-family: 'DM Sans', sans-serif; color: var(--black); font-size: 11px; line-height: 1.5; }
+  .page { width: 794px; min-height: 1123px; margin: 0 auto; background: var(--white); display: grid; grid-template-columns: 260px 1fr; grid-template-rows: auto 1fr; }
+  .header { grid-column: 1 / -1; background: var(--black); color: var(--white); padding: 32px 36px 28px; display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; }
+  .header-left .name { font-family: 'Bebas Neue', sans-serif; font-size: 42px; letter-spacing: 2px; line-height: 1; color: var(--white); }
+  .header-left .name em { color: var(--accent); font-style: normal; }
+  .header-left .title { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--accent); margin-top: 6px; }
+  .header-right { text-align: right; display: flex; flex-direction: column; gap: 4px; }
+  .contact-item { font-size: 10px; color: rgba(255,255,255,0.65); font-family: 'DM Mono', monospace; }
+  .contact-item span { color: var(--accent); font-weight: 500; }
+  .sidebar { background: var(--mid); color: var(--white); padding: 28px 22px; display: flex; flex-direction: column; gap: 26px; }
+  .main { padding: 28px 28px 28px 26px; display: flex; flex-direction: column; gap: 22px; }
+  .section-label { font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+  .sidebar .section-label { color: var(--accent); }
+  .main .section-label { color: var(--gray); }
+  .section-label::after { content: ''; flex: 1; height: 1px; }
+  .sidebar .section-label::after { background: rgba(255,255,255,0.1); }
+  .main .section-label::after { background: #E0E0DA; }
+  .tool-item { margin-bottom: 10px; }
+  .tool-header { display: flex; align-items: center; gap: 8px; margin-bottom: 3px; }
+  .tool-icon { width: 22px; height: 22px; border-radius: 5px; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; flex-shrink: 0; }
+  .tool-name { font-size: 10px; font-weight: 600; color: var(--white); }
+  .tool-use { font-size: 9px; color: rgba(255,255,255,0.5); padding-left: 30px; line-height: 1.4; }
+  .bar-track { height: 3px; background: rgba(255,255,255,0.1); border-radius: 2px; margin-top: 5px; margin-left: 30px; overflow: hidden; }
+  .bar-fill { height: 100%; background: var(--accent); border-radius: 2px; }
+  .skills-grid { display: flex; flex-wrap: wrap; gap: 6px; }
+  .skill-tag { background: rgba(200,241,53,0.12); border: 1px solid rgba(200,241,53,0.25); color: var(--accent); font-size: 8.5px; font-family: 'DM Mono', monospace; padding: 3px 8px; border-radius: 2px; }
+  .lang-item { display: flex; justify-content: space-between; align-items: center; margin-bottom: 7px; }
+  .lang-name { font-size: 10px; color: var(--white); }
+  .lang-dots { display: flex; gap: 3px; }
+  .dot { width: 6px; height: 6px; border-radius: 50%; background: rgba(255,255,255,0.15); }
+  .dot.filled { background: var(--accent); }
+  .summary-text { font-size: 10.5px; line-height: 1.7; color: #333; border-left: 3px solid var(--accent); padding-left: 12px; }
+  .metrics-row { display: flex; gap: 8px; margin-bottom: 20px; }
+  .metric-card { flex: 1; background: var(--black); color: var(--white); padding: 10px 12px; border-radius: 4px; text-align: center; }
+  .metric-num { font-family: 'Bebas Neue', sans-serif; font-size: 26px; color: var(--accent); line-height: 1; }
+  .metric-label { font-size: 8px; color: rgba(255,255,255,0.5); font-family: 'DM Mono', monospace; }
+  .exp-block { margin-bottom: 16px; }
+  .exp-header { display: flex; justify-content: space-between; }
+  .exp-role { font-size: 12px; font-weight: 600; }
+  .exp-company { font-size: 10px; color: var(--gray); margin-bottom: 7px; }
+  .exp-company span { color: var(--accent); background: var(--black); padding: 1px 5px; border-radius: 2px; font-size: 8.5px; margin-left: 4px; }
+  .exp-bullets { list-style: none; }
+  .exp-bullets li { font-size: 10px; color: #2C2C2C; padding-left: 14px; position: relative; margin-bottom: 4px; }
+  .exp-bullets li::before { content: '▸'; position: absolute; left: 0; color: var(--accent); }
+  @media print { body { background: white; } .page { width: 100%; box-shadow: none; } }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="header">
+    <div class="header-left">
+      <div class="name">SAHAND <em>NAJMALDEEN</em> LATIF</div>
+      <div class="title">Social Media &amp; Content Specialist · AI Power-User</div>
+    </div>
+    <div class="header-right">
+      <div class="contact-item"><span>✆</span> +964 775 568 1628</div>
+      <div class="contact-item"><span>✉</span> sahandnlatif09@gmail.com</div>
+      <div class="contact-item"><span>⌖</span> Remote · Available Worldwide</div>
+    </div>
+  </header>
+  <aside class="sidebar">
+    <div>
+      <div class="section-label">AI Power-User Toolbox</div>
+      <div class="tool-item">
+        <div class="tool-header">
+          <div class="tool-icon" style="background:#10A37F; color:#fff;">AI</div>
+          <div class="tool-name">ChatGPT / Claude</div>
+        </div>
+        <div class="tool-use">Copywriting, ideation, & brand voice scripting</div>
+        <div class="bar-track"><div class="bar-fill" style="width:95%"></div></div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-header">
+          <div class="tool-icon" style="background:#7C3AED; color:#fff;">✦</div>
+          <div class="tool-name">Canva Magic Studio</div>
+        </div>
+        <div class="tool-use">AI graphics & brand kits</div>
+        <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-header">
+          <div class="tool-icon" style="background:#E8183C; color:#fff;">MJ</div>
+          <div class="tool-name">Midjourney</div>
+        </div>
+        <div class="tool-use">Campaign visuals & creative concepts</div>
+        <div class="bar-track"><div class="bar-fill" style="width:85%"></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="section-label">Key Skills</div>
+      <div class="skills-grid">
+        <span class="skill-tag">Content Strategy</span>
+        <span class="skill-tag">Trend Analysis</span>
+        <span class="skill-tag">Community Mgmt</span>
+        <span class="skill-tag">SEO Copywriting</span>
+        <span class="skill-tag">Motion Graphics</span>
+        <span class="skill-tag">AI Workflows</span>
+      </div>
+    </div>
+    <div>
+      <div class="section-label">Languages</div>
+      <div class="lang-item">
+        <div class="lang-name">Kurdish (Native)</div>
+        <div class="lang-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div></div>
+      </div>
+      <div class="lang-item">
+        <div class="lang-name">Arabic (Fluent)</div>
+        <div class="lang-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div></div>
+      </div>
+      <div class="lang-item">
+        <div class="lang-name">English (Professional)</div>
+        <div class="lang-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div></div>
+      </div>
+    </div>
+  </aside>
+  <main class="main">
+    <div>
+      <div class="section-label">Professional Summary</div>
+      <p class="summary-text">
+        Results-driven <strong>Digital Content Specialist</strong> with a proven track record of scaling social media presence using <strong>AI-augmented production workflows</strong>. I combine creative storytelling with tools like Claude and Canva to produce high-volume content at high speed. Fluent in Kurdish, Arabic, and English — uniquely positioned for multilingual campaigns.
+      </p>
+    </div>
+    <div class="metrics-row">
+      <div class="metric-card"><div class="metric-num">50%</div><div class="metric-label">Faster Turnaround</div></div>
+      <div class="metric-card"><div class="metric-num">3×</div><div class="metric-label">Content Output</div></div>
+      <div class="metric-card"><div class="metric-num">+120%</div><div class="metric-label">Engagement Lift</div></div>
+    </div>
+    <div>
+      <div class="section-label">Work Experience</div>
+      <div class="exp-block">
+        <div class="exp-header">
+          <div class="exp-role">Social Media Content Strategist</div>
+          <div class="exp-dates">2023 – Present</div>
+        </div>
+        <div class="exp-company">Freelance Projects <span>Remote</span></div>
+        <ul class="exp-bullets">
+          <li>Built AI-powered content pipelines reducing production time by 50%.</li>
+          <li>Managed multi-platform accounts growing engagement through trend analysis.</li>
+          <li>Produced high-performing Reels and TikToks using AI-assisted video tools.</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</div>
+</body>
+</html>
